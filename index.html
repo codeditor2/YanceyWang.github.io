@@ -222,29 +222,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-	
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
-		
-		</div>
-	
         <p>在Windows中当我们需要对一个图片进行复杂处理的时候，我们会选用adobe的ps软件，当我们需要快速的进行截图，然后进行简单的标记处理时，qq等类似软件提供的快速截图功能很好的满足了我们的需求。然而qq等类似软件在ubuntu中没有原生的支持，我们平常要进行截图时，就是按下PrintScreen快捷键。虽然也能达到截图目的，但总归来说没有QQ截图那么方便，任性。那今天这边介绍的一款软件可以在ubuntu中提供类似于QQ截图的功能。</p>
-<p>软件的名字是： <strong>DeepinScrot</strong> ，Github 地址，<a href="https://github.com/linuxdeepin-packages/deepin-scrot" target="_blank" rel="external">点这里</a>.</p>
-<p>通过下面的命令获取最新的安装包：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://packages.linuxdeepin.com/deepin/pool/main/d/deepin-scrot/deepin-scrot_2.<span class="number">0</span>-<span class="number">0</span>deepin_all.deb</span><br></pre></td></tr></table></figure>
-<p>然后，进行安装：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i deepin-scrot_2.<span class="number">0</span>-<span class="number">0</span>deepin_all.deb</span><br></pre></td></tr></table></figure>
-<p>之后就可以使用了：</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deepin-scrot</span><br></pre></td></tr></table></figure>
-<p>为了使用方便，我们为它设置快捷启动键：<br>打开systemsetting-&gt;keybord-&gt;shortcut<br><img src="http://7xkr9a.com1.z0.glb.clouddn.com/Blog01DeepinScrotShortCut.png" alt="DeepinScrot"></p>
-<blockquote>
-<p>在custom shortcut 中新建一个项目，名字随便起。Command填  <code>deepin-scrot</code> 之后再给他个快捷键 <code>Ctrl+alt+A</code> </p>
-</blockquote>
-<p>看下效果，按下 <code>CTRL+ALT+A</code>:</p>
-<p><img src="http://7xkr9a.com1.z0.glb.clouddn.com/Blog01DeepinScrot.png" alt="DeepinScrot"> </p>
-<p>很不错，几乎跟QQ截图一样，也提供了一些快速标记的功能。</p>
-<p>感觉还不错~</p>
-
       
     </div>
     
@@ -257,6 +235,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2015/07/31/ubuntu小巧好用的类似QQ截图的软件/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -298,12 +280,6 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-	
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备"><span class="toc-number">1.</span> <span class="toc-text">准备</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#静态博客和动态博客"><span class="toc-number">1.1.</span> <span class="toc-text">静态博客和动态博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GitHub_与_静态博客"><span class="toc-number">1.2.</span> <span class="toc-text">GitHub 与 静态博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo"><span class="toc-number">1.3.</span> <span class="toc-text">Hexo</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开始"><span class="toc-number">2.</span> <span class="toc-text">开始</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo环境安装"><span class="toc-number">2.1.</span> <span class="toc-text">Hexo环境安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Ubuntu_安装NodeJS"><span class="toc-number">2.1.1.</span> <span class="toc-text">Ubuntu 安装NodeJS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Ubuntu安装Git"><span class="toc-number">2.1.2.</span> <span class="toc-text">Ubuntu安装Git</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Github_pages_仓库创建"><span class="toc-number">2.2.</span> <span class="toc-text">Github pages 仓库创建</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#执行"><span class="toc-number">3.</span> <span class="toc-text">执行</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化本地博客目录"><span class="toc-number">3.1.</span> <span class="toc-text">初始化本地博客目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成静态文件"><span class="toc-number">3.2.</span> <span class="toc-text">生成静态文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本地服务开启"><span class="toc-number">3.3.</span> <span class="toc-text">本地服务开启</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建新的博客"><span class="toc-number">3.4.</span> <span class="toc-text">创建新的博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更改博客主题"><span class="toc-number">3.5.</span> <span class="toc-text">更改博客主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成静态文件,在本地预览"><span class="toc-number">3.6.</span> <span class="toc-text">生成静态文件,在本地预览</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#将博客部署到github_pages中"><span class="toc-number">4.</span> <span class="toc-text">将博客部署到github pages中</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用7牛图床"><span class="toc-number">5.</span> <span class="toc-text">使用7牛图床</span></a></li></ol>
-		</div>
-	
         <blockquote>
 <p><strong>前言</strong><br>最近发生了一些事情，不知道该怎么面对，想让自己忙起来，没有时间去想别的事情。同时，让我对过去进行了一个反思，以及对将来进行了初步的规划，我想改变，也一定会改变，借此博客，记录我成长的点点滴滴。希望我希望看到的人能看到，也希望能给大家带来点帮助。</p>
 </blockquote>
@@ -324,95 +300,6 @@
 <li>博主可以自由选择自己喜欢的本地写作工具，而不需要受制于在线博客写作工具的质量火热用户体验</li>
 </ul>
 </blockquote>
-<h3 id="GitHub_与_静态博客"><strong>GitHub 与 静态博客</strong></h3><p>静态博客是个新生事物。静态博客的流行跟著名的开源社区Github的支持是分不开的。因此，绝大部分静态博客平台设计得还是比较极客，更适合有一定编程技能的人来使用，并不适合完全零起点的完全没有编程知识的普通用户。而Github除提供在线Markdown编辑器之外，还提供了Github Page服务，可以将用户托管在Github上的Markdown博客发布为静态网站。博主完全可以将自己的博客站免费寄放在Github上。此外，通过Github发布博客，还有一个额外的好处，那就是你的博客文章可以用Git来管理，这样你就可以在Github上获得博客文章的完整发布历史（像程序员管理源代码一样），并且可以随时获取历史版本或回退和回退到特定的版本上，相当于有了强大的备份系统。</p>
-<h3 id="Hexo"><strong>Hexo</strong></h3><p>hexo出自台湾大学生tommy351之手，是一个基于Node.js的静态博客程序，其编译上百篇文字只需要几秒。hexo生成的静态网页可以直接放到GitHub Pages，BAE，SAE等平台上。</p>
-<p><strong>本着不花钱，爱折腾的原则，本人选择Hexo加上Git Pages 的方法搭建自己的独立博客</strong></p>
-<h2 id="开始"><strong>开始</strong></h2><h3 id="Hexo环境安装"><strong>Hexo环境安装</strong></h3><blockquote>
-<p>在Hexo的<a href="https://hexo.io/docs/" target="_blank" rel="external">官网</a>详细介绍了Hexo的安装和使用，安装Hexo的前提是需要先安装Node js和Git。</p>
-</blockquote>
-<h4 id="Ubuntu_安装NodeJS"><strong>Ubuntu 安装NodeJS</strong></h4><p>在ubuntu上安装Node.js也有很多方法，最常见的有两种：一种是通过Node.js的<a href="https://nodejs.org/" target="_blank" rel="external">官网</a>下载源码编译安装,另一种就是按照Hexo官网介绍的方法安装,这边以第二中方式为例.</p>
-<ul>
-<li>下载和安装nvm,nvm介绍<a href="http://weizhifeng.net/node-version-management-via-n-and-nvm.html" target="_blank" rel="external">请看</a>:</li>
-</ul>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#这边可以使用curl也可以通过wget</span></span><br><span class="line">$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh</span><br><span class="line"><span class="comment">#不过,我只有wget方法能成功</span></span><br><span class="line">$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh</span><br></pre></td></tr></table></figure>
-<ul>
-<li>nvm安装好了之后,通过nvm安装node.js</li>
-</ul>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#0.12 为node.js版本,Current Version: v0.12.7</span></span><br><span class="line"><span class="variable">$nvm</span> isntall <span class="number">0.12</span></span><br></pre></td></tr></table></figure>
-<p>至此Nodejs安装完毕,我们可以通过命令查看nodejs 版本</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wyq@wyq-m81 ~ $ node -v</span><br><span class="line">v0.<span class="number">10.25</span></span><br></pre></td></tr></table></figure>
-<h4 id="Ubuntu安装Git"><strong>Ubuntu安装Git</strong></h4><p>在ubuntu中安装git还是相当简单的,直接使用包管理器进行安装就好:</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sudo</span> apt-get install git</span><br><span class="line"><span class="variable">$sudo</span> apt-get install git-core</span><br></pre></td></tr></table></figure>
-<p><strong>Nodejs 和 git都已经安装好了,接下来就可安装我们的主角Hexo了</strong></p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p>安装过程有点慢,这个时候你可以问候一下GFW.</p>
-<h3 id="Github_pages_仓库创建"><strong>Github pages 仓库创建</strong></h3><p>安装好Hexo后,就该另一个主角Github pages 登场了.关于Github pages的介绍,请看<a href="https://pages.github.com/" target="_blank" rel="external">这里</a>,它主要的作用是github给你或你的团队展示你的项目的地方,我们用这个来放我的博客简直再适合不过了.<br><img src="http://7xkr9a.com1.z0.glb.clouddn.com/Blog00NewRepo.png" alt="new repo"><br><img src="http://7xkr9a.com1.z0.glb.clouddn.com/Blog00GithubIO.png" alt="new repo"></p>
-<p>Github pages本质还是你github上的一个repository,只不过它的命名规则是[suername].github.io的形式,并且每个github只能有这么一个这样的仓库.创建好这样的仓库后就可以在浏览器地址栏输入[username].github.io进行访问了.</p>
-<h2 id="执行"><strong>执行</strong></h2><blockquote>
-<p>Hexo和Github pages 准备好以后,我们就可以正式开始博客建立了.</p>
-</blockquote>
-<h3 id="初始化本地博客目录"><strong>初始化本地博客目录</strong></h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#在home新建一个文件夹,用于本地存放博客</span></span><br><span class="line"><span class="variable">$mkdir</span> Blogs</span><br><span class="line"><span class="variable">$cd</span> Blogs</span><br><span class="line"><span class="comment">#用hexo命令在Blogs目录中初始化环境</span></span><br><span class="line"><span class="variable">$hexo</span> init</span><br><span class="line"><span class="variable">$npm</span> install</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>这个时候,其实Hexo为我们生成了一个默认的名为HelloWorld的一篇博客,接下来我们看下这篇博客</p>
-</blockquote>
-<h3 id="生成静态文件"><strong>生成静态文件</strong></h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#使用hexo generate命令可以将我们编写的markdown文件转换成html文件</span></span><br><span class="line"><span class="variable">$hexo</span> generate</span><br></pre></td></tr></table></figure>
-<h3 id="本地服务开启"><strong>本地服务开启</strong></h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wyq@wyq-m81 ~/Blog $ hexo server</span><br><span class="line">INFO  Hexo is running at http://<span class="number">0.0</span>.<span class="number">0.0</span>:<span class="number">4000</span>/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>这个时候在浏览器地址栏输入localhost:4000就可看到Hexo为我们生成的这边博客了<br>大概就是这个样子(默认的标题和名字已经被我改掉啦)</p>
-</blockquote>
-<p><img src="http://7xkr9a.com1.z0.glb.clouddn.com/Blog00HelloWorld.png" alt="默认HellowordPost"></p>
-<blockquote>
-<p>到此我们已经把基本建博客的流程走过一遍了,怎么样,是不是很easy呀.接下来我们完成三个事情:创建一个篇新的博客,给博客换个主题,上传到Github pages.</p>
-</blockquote>
-<h3 id="创建新的博客"><strong>创建新的博客</strong></h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#使用hexo new [postname]新建一篇博客</span></span><br><span class="line"><span class="variable">$hexo</span> new firstblog</span><br><span class="line"><span class="comment">#完成之后,进入到source/_psots目录就可以看到我们刚才新建的博客了</span></span><br><span class="line"><span class="variable">$cd</span> source/_posts</span><br><span class="line"><span class="variable">$ll</span></span><br><span class="line">drwxr-xr-x <span class="number">2</span> wyq wyq <span class="number">4096</span> Jul <span class="number">30</span> <span class="number">11</span>:<span class="number">25</span> .</span><br><span class="line">drwxr-xr-x <span class="number">3</span> wyq wyq <span class="number">4096</span> Jul <span class="number">29</span> <span class="number">16</span>:<span class="number">17</span> ..</span><br><span class="line">-rw-r--r-- <span class="number">1</span> wyq wyq   <span class="number">53</span> Jul <span class="number">30</span> <span class="number">11</span>:<span class="number">25</span> firstBlog.md</span><br><span class="line">-rw-r--r-- <span class="number">1</span> wyq wyq  <span class="number">852</span> Jul <span class="number">29</span> <span class="number">18</span>:<span class="number">04</span> HelloWorld.md</span><br><span class="line"><span class="comment">#firstBlog.md就是我们刚才新建的一篇博客</span></span><br></pre></td></tr></table></figure>
-<p>博客文章都是md格式的markdown文件,我们打开来看下<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Hexo默认为我们生成了三行</span></span><br><span class="line">title: firstBlog <span class="comment">#这边博客的标题</span></span><br><span class="line">date: <span class="number">2015</span>-<span class="number">07</span>-<span class="number">30</span> <span class="number">11</span>:<span class="number">25</span>:<span class="number">44</span> <span class="comment">#博客创建时间</span></span><br><span class="line">tags: <span class="comment">#博客的tag</span></span><br></pre></td></tr></table></figure></p>
-<p>那我们只需要使用markdown语法在这个文件里面写我们的博客就ok了,这里推荐在线markdwon编辑器,<a href="https://www.zybuluo.com" target="_blank" rel="external">CMD markdown</a>,至于markdown语法,我们只需要了解常用的就行了,学习成本几乎等于0,<a href="https://help.github.com/articles/markdown-basics/" target="_blank" rel="external">Github markdown语法</a></p>
-<h3 id="更改博客主题"><strong>更改博客主题</strong></h3><p>Hexo 有丰富的主题支持,这也是我选择它的原因之一,在<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">这里</a>列出了所有的Hexo 主题,大家可以选择自己喜欢的使用.我这里以Yilia为例</p>
-<p>在我们使用<code>hexo init</code> 初始化本地博客环境后,会看到如下的文件目录结构:</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── scripts</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
-<p>这边先直介绍其中几个:</p>
-<ul>
-<li>_config.yml文件整个博客的配置文件,</li>
-<li>source/_posts文件夹包含了当前整个博客的所有文章</li>
-<li>themes 文件夹包含了当前的主题文件.</li>
-</ul>
-<p>我们要使用<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">Yilia</a>主题</p>
-<ul>
-<li>在当前目录(这里就是Blogs)中,clone Yilla 代码</li>
-</ul>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br></pre></td></tr></table></figure>
-<p>*更改_config.yml文件,在最后加入使用主题语句</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: yilia</span><br></pre></td></tr></table></figure>
-<ul>
-<li>进入到主题目录,编辑主题配置文件</li>
-</ul>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$cd</span> themes/yilia</span><br><span class="line"><span class="variable">$vim</span> _congif.yml</span><br></pre></td></tr></table></figure>
-<p>主题文件的配置说明</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"># Header</span><br><span class="line">menu:</span><br><span class="line">  主页: /</span><br><span class="line">  所有文章: /archives</span><br><span class="line">  # 随笔: /tags/随笔</span><br><span class="line"></span><br><span class="line"># SubNav</span><br><span class="line">subnav:</span><br><span class="line">  github: "#"</span><br><span class="line">  weibo: "#"</span><br><span class="line">  rss: "#"</span><br><span class="line">  zhihu: "#"</span><br><span class="line">  #douban: "#"</span><br><span class="line">  #mail: "#"</span><br><span class="line">  #facebook: "#"</span><br><span class="line">  #google: "#"</span><br><span class="line">  #twitter: "#"</span><br><span class="line">  #linkedin: "#"</span><br><span class="line"></span><br><span class="line">rss: /atom.xml</span><br><span class="line"></span><br><span class="line"># Content</span><br><span class="line">excerpt_link: more</span><br><span class="line">fancybox: true</span><br><span class="line">mathjax: true</span><br><span class="line"></span><br><span class="line"># Miscellaneous</span><br><span class="line">google_analytics: ''</span><br><span class="line">favicon: /favicon.png</span><br><span class="line"></span><br><span class="line">#你的头像url</span><br><span class="line">avatar: ""</span><br><span class="line">#是否开启分享</span><br><span class="line">share: true</span><br><span class="line">#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key</span><br><span class="line">#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论</span><br><span class="line">duoshuo: true</span><br><span class="line">#是否开启云标签</span><br><span class="line">tagcloud: true</span><br><span class="line"></span><br><span class="line">#是否开启友情链接</span><br><span class="line">#不开启——</span><br><span class="line">#friends: false</span><br><span class="line">#开启——</span><br><span class="line">friends:</span><br><span class="line">  奥巴马的博客: http://localhost:4000/</span><br><span class="line">  卡卡的美丽传说: http://localhost:4000/</span><br><span class="line">  本泽马的博客: http://localhost:4000/</span><br><span class="line">  吉格斯的博客: http://localhost:4000/</span><br><span class="line">  习大大大不同: http://localhost:4000/</span><br><span class="line">  托蒂的博客: http://localhost:4000/</span><br><span class="line"></span><br><span class="line">#是否开启“关于我”。</span><br><span class="line">#不开启——</span><br><span class="line">#aboutme: false</span><br><span class="line">#开启——</span><br><span class="line">aboutme: 我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</span><br></pre></td></tr></table></figure>
-<h3 id="生成静态文件,在本地预览"><strong>生成静态文件,在本地预览</strong></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$hexo generate</span><br><span class="line">$hexo server</span><br></pre></td></tr></table></figure>
-<p>效果如下<br><img src="http://7xkr9a.com1.z0.glb.clouddn.com/Blog00UseYiliaTheme.png" alt="use yilia theme"></p>
-<p>**ok,大功告成,就差把博客部署到github.io了</p>
-<h2 id="将博客部署到github_pages中"><strong>将博客部署到github pages中</strong></h2><p>在博客配置文件_config.yml中,有个deployment一节,在这边我们进行github pages 的配置</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: http://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  type: git <span class="comment">#注意,这边是git不是github,hexo 3.0以后就要求使用git,不然会出现deploy失败情况.</span></span><br><span class="line">  repo: https://github.com/YanceyWang/YanceyWang.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>配置好了之后,就可以吧我们博客deploy到github 上啦.</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> clean</span><br><span class="line"><span class="variable">$hexo</span> generate</span><br><span class="line"><span class="variable">$hexo</span> deploy</span><br></pre></td></tr></table></figure>
-<p>之后,在地址栏输入[username.github.io] 就可以访问你的博客了.</p>
-<h2 id="使用7牛图床"><strong>使用7牛图床</strong></h2><p>考虑到博客的速度，同时也为了便于博客的迁移，图床是必须的。我墙裂推荐七牛，访问速度极快，支持日志、防盗链和水印。</p>
-<p>免费用户有每月10GB流量+总空间10GB+PUT/DELETE 10万次请求+GET 100万次请求，这对个人博客来说足够，不够的话点这个活动页面，也可通过邀请好友获得奖励，我也求一下七牛邀请。有一点要说明的是，七牛没有目录的概念，但是文件名可以包含/，比如2013/11/27/reading/photos-0.jpg，参考这里关于key-value存储系统。</p>
-<ul>
-<li><p><strong>首先要去7牛<a href="http://www.qiniu.com/" target="_blank" rel="external">官网</a>注册帐号,然后准备好身份证前后照,进行身份验证,不然很多功能无法使用.</strong><br>验证好了大概就是这个样子<br><img src="http://7xkr9a.com1.z0.glb.clouddn.com/Blog007niuIDvER.png" alt="身份验证"></p>
-</li>
-<li><p><strong>接着就可以创建空间了</strong><br><img src="http://7xkr9a.com1.z0.glb.clouddn.com/Blog00CreateRepo.png" alt="创建空间"></p>
-</li>
-<li><p><strong>然后进行图片上传,获取外连</strong><br><img src="http://7xkr9a.com1.z0.glb.clouddn.com/Blog007niuouterlink.png" alt="获取外连"></p>
-</li>
-<li><p><strong>还可以新建样式,给图片设置缩放,加水印等.</strong><br><img src="http://7xkr9a.com1.z0.glb.clouddn.com/Blog00CreateStyle.png" alt="新建样式"></p>
-</li>
-</ul>
-<blockquote>
-<p><strong>后记</strong><br>今天就写到这吧,本来昨天在公司已经配置的差不多了,以为回家能够轻车熟路的在windows上弄好环境,结果是我想多了.在ubuntu上用习惯了命令,在win上真是痛苦啊,想打开终端,<code>CTRL+ALT+T</code>,结果才发现是在win上,想看目录<code>ll</code>,结果提示没有这个命令..一气之下下载了Ubuntu 14.04 给PC装了双系统.<br>第一次写博客,肯定有很多不足之处,让大家见笑了,希望您提出您的宝贵意见,我会努力做的越来越好.<br>这篇文章只是Hexo搭博客的基础篇,可能会有进阶篇,会介绍域名购买,评论系统使用以及更多的一些优化.</p>
-</blockquote>
-
       
     </div>
     
@@ -425,6 +312,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2015/07/30/Ubuntu+Hexo+GithubPages搭建静态博客/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
