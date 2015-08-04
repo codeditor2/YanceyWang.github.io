@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   
-  <title>遇见最美的自己</title>
+  <title>猴子也能看懂的UEFI下Win8+Ubuntu双系统安装(Lenovo xiaoxin V4000) | 遇见最美的自己</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="前言上次在公司搭建好了博客，想着回家在win8上花几分钟搭建环境，当晚发第一篇，结果没想到习惯了linux后在win8上进行工作感觉寸步难行。所以干脆在家的电脑上也给装上了Ubuntu，今天记录下安装双系统的过程以及一些自己的总结。
 
 让人烦躁却不得不知道的术语首先要明白,当我们按下电脑的开机键后,电脑在启动系统之前最先执行的一段程序是放在主板上的只读程序段名字叫Firmware,至于具体电脑的寄">
 <meta property="og:type" content="article">
-<meta property="og:title" content="遇见最美的自己">
+<meta property="og:title" content="猴子也能看懂的UEFI下Win8+Ubuntu双系统安装(Lenovo xiaoxin V4000)">
 <meta property="og:url" content="http://yoursite.com/2015/08/04/win8安装ubuntu双系统/index.html">
 <meta property="og:site_name" content="遇见最美的自己">
 <meta property="og:description" content="前言上次在公司搭建好了博客，想着回家在win8上花几分钟搭建环境，当晚发第一篇，结果没想到习惯了linux后在win8上进行工作感觉寸步难行。所以干脆在家的电脑上也给装上了Ubuntu，今天记录下安装双系统的过程以及一些自己的总结。
@@ -33,9 +33,9 @@
 <meta property="og:image" content="http://7xkr9a.com1.z0.glb.clouddn.com/Blog02IMAG0015.jpg">
 <meta property="og:image" content="http://7xkr9a.com1.z0.glb.clouddn.com/Blog02IMAG0016.jpg">
 <meta property="og:image" content="http://7xkr9a.com1.z0.glb.clouddn.com/Blog02efibootmgr.png">
-<meta property="og:updated_time" content="2015-08-04T06:32:10.000Z">
+<meta property="og:updated_time" content="2015-08-04T06:40:15.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="遇见最美的自己">
+<meta name="twitter:title" content="猴子也能看懂的UEFI下Win8+Ubuntu双系统安装(Lenovo xiaoxin V4000)">
 <meta name="twitter:description" content="前言上次在公司搭建好了博客，想着回家在win8上花几分钟搭建环境，当晚发第一篇，结果没想到习惯了linux后在win8上进行工作感觉寸步难行。所以干脆在家的电脑上也给装上了Ubuntu，今天记录下安装双系统的过程以及一些自己的总结。
 
 让人烦躁却不得不知道的术语首先要明白,当我们按下电脑的开机键后,电脑在启动系统之前最先执行的一段程序是放在主板上的只读程序段名字叫Firmware,至于具体电脑的寄">
@@ -119,6 +119,8 @@
 				        
 							<li><a href="/archives">所有文章</a></li>
 				        
+							<li><a href="/tags/随笔">随笔</a></li>
+				        
 						</ul>
 					</nav>
 					<nav class="header-nav">
@@ -128,7 +130,7 @@
 					        
 								<a class="weibo" target="_blank" href="http://weibo.com/3172109383/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo">weibo</a>
 					        
-								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
 					        
 								<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/wang-Yancey" title="zhihu">zhihu</a>
 					        
@@ -139,7 +141,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/BIOS/" style="font-size: 10px;">BIOS</a> <a href="/tags/DeepinScrot/" style="font-size: 10px;">DeepinScrot</a> <a href="/tags/GPT/" style="font-size: 10px;">GPT</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/MBR/" style="font-size: 10px;">MBR</a> <a href="/tags/UEFI/" style="font-size: 10px;">UEFI</a> <a href="/tags/Ubuntu/" style="font-size: 20px;">Ubuntu</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/双系统/" style="font-size: 10px;">双系统</a> <a href="/tags/截图软件/" style="font-size: 10px;">截图软件</a>
+						<a href="/tags/BIOS/" style="font-size: 10px;">BIOS</a> <a href="/tags/GPT/" style="font-size: 10px;">GPT</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/MBR/" style="font-size: 10px;">MBR</a> <a href="/tags/UEFI/" style="font-size: 10px;">UEFI</a> <a href="/tags/Ubuntu/" style="font-size: 20px;">Ubuntu</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/双系统/" style="font-size: 10px;">双系统</a> <a href="/tags/截图软件/" style="font-size: 10px;">截图软件</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
 					</div>
 				</section>
 				
@@ -200,6 +202,8 @@
 		        
 					<li><a href="/archives">所有文章</a></li>
 		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
 		        <div class="clearfix"></div>
 				</ul>
 			</nav>
@@ -210,7 +214,7 @@
 			        
 						<a class="weibo" target="_blank" href="http://weibo.com/3172109383/profile?rightmod=1&wvr=6&mod=personinfo" title="weibo">weibo</a>
 			        
-						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
 			        
 						<a class="zhihu" target="_blank" href="http://www.zhihu.com/people/wang-Yancey" title="zhihu">zhihu</a>
 			        
@@ -232,6 +236,28 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      猴子也能看懂的UEFI下Win8+Ubuntu双系统安装(Lenovo xiaoxin V4000)
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BIOS/">BIOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GPT/">GPT</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MBR/">MBR</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UEFI/">UEFI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/双系统/">双系统</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
 	
@@ -246,6 +272,7 @@
 <h2 id="让人烦躁却不得不知道的术语"><strong>让人烦躁却不得不知道的术语</strong></h2><p><strong>首先要明白,当我们按下电脑的开机键后,电脑在启动系统之前最先执行的一段程序是放在主板上的只读程序段名字叫Firmware,至于具体电脑的寄存器是怎么复位的,寄存器是怎么寻址到Firmware的,请看知乎大神的<a href="http://www.zhihu.com/question/22364502" target="_blank" rel="external">回答</a>. 我们只需要知道有这段程序,并且在启动系统前会走这段路程就足够了. 目前有两种类型的Firmware,一种是我们以前经常听到的 BIOS(发音:/ˈbaɪ.ɒs/),,那还有一种就是近几年兴起的用来代替BIOS的UEFI发音(pronounced as an initialism U-E-F-I or like “unify” without the n[a])),当我们按下电脑开机键后,电脑厂商的LOGO出来的时候狂按(F2|F12|F9|del 具体各个厂商不一样,我的联想小新就是F2)键就能进入到Firmware控制界面(Firmware setup utility,),接下来我们就看下这两种Firmware</strong></p>
 <h3 id="BIOS与UEFI">BIOS与UEFI</h3><p>BIOS的启动方式是通过读取执行硬盘第一个扇区的代码,之后通过这段代码定位并且执行别的代码.由于BIOS的空间限制并且BIOS只能执行16bit的代码,BIOS在使用中有很多限制.相反的,UEFI 通过加载硬盘ESP分区上的efi文件来启动系统,EFI 启动加载器程序可以利用EFI 启动服务来做很多事情,例如从硬盘读取文件.</p>
 <h3 id="Secure_Boot"><span id="secureboot">Secure Boot</span></h3><p>Secure Boot只是UEFI的一个部分。两者的关系是局部与整体的关系。<br>Secure Boot的目的，是防止恶意软件侵入。它的做法就是采用密钥。UEFI规定，主板出厂的时候，可以内置一些可靠的公钥。然后，任何想要在这块主板上加载的操作系统或者硬件驱动程序，都必须通过这些公钥的认证。也就是说，这些软件必须用对应的私钥签署过，否则主板拒绝加载。由于恶意软件不可能通过认证，因此就没有办法感染Boot。<br>这个设想是好的。但是，UEFI没规定哪些公钥是可靠的，也没规定谁负责颁发这些公钥，都留给硬件厂商自己决定。<br>现在，微软就是要求，主板厂商内置Windows 8的公钥。</p>
+<a id="more"></a>
 <h3 id="MBR与GPT">MBR与GPT</h3><p>我们在装系统的时候有时可能会遇到这种问题:<br><img src="http://7xkr9a.com1.z0.glb.clouddn.com/Blog02installError.jpg" alt="installError"><br><strong>Windows无法安装到这个磁盘。选中的磁盘具有MBR分区表。在EFI系统上，Windows只能安装到GPT磁盘</strong><br>这句话的意思是说,你的磁盘以前是按着MBR方式分区的,现在你在UEFI启动方式上,想安装系统在这个磁盘上就必须将磁盘重新按照GPT方式分区.也就是说不同的启动方式,要对应不同的分区方式,系统才能正常安装.那什么是MBR什么是GPT?</p>
 <p>MBR和GPT是两种不同的存储磁盘分区信息方式,这些信息包括每个分区的起至位置,这样你的操作系统就知道哪个扇区属于哪个分区,以及哪个分区是可以启动的.MBR 使用的是传统的BIOS 分区表,GPT使用的是UEFI分区表.MBR的限制在于磁盘只能有四个主分区.并且主打只支持2T的容量.而GPT完全没有这些限制.</p>
 <p>那怎么知道现在的磁盘是什么方式分区的以及怎么选择分区方式呢?<br>这个很简单,我们用DiskGenus查看磁盘分区的时候,在菜单栏有选项,如果当前是按MBR分区,那么会出现<code>将磁盘分区转换为GPT分区</code>的选项,如果是按GPT分区的,那么<code>将磁盘分区转换为MBR分区</code>是可选的.同时,我们在对磁盘进行分区的时候可以选择分区方式,例如我要将磁盘按GPT方式分区:<br><img src="http://7xkr9a.com1.z0.glb.clouddn.com/Blog02DiskDeniusPartition.jpg" alt="GPT分区"><br>可以看到DG工具会提示我们创建ESP分区和MSR分区.这两个分区是UEFI启动方式中非常重要的分区.</p>
@@ -344,7 +371,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="win8安装ubuntu双系统" data-title="" data-url="http://yoursite.com/2015/08/04/win8安装ubuntu双系统/"></div>
+	<div class="ds-thread" data-thread-key="win8安装ubuntu双系统" data-title="猴子也能看懂的UEFI下Win8+Ubuntu双系统安装(Lenovo xiaoxin V4000)" data-url="http://yoursite.com/2015/08/04/win8安装ubuntu双系统/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
